@@ -63,31 +63,23 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Drawer Menu */}
-        <div
-          className={`lg:hidden fixed inset-0 bg-neutral-900 z-20 transform ${
-            mobileDrawerOpen ? "translate-x-0" : "translate-x-full"
-          } transition-transform duration-300 ease-in-out`}
-        >
-          <div className="flex flex-col items-center justify-center h-full">
-            <ul className="space-y-6 text-center">
-              {navItems.map((item, index) => (
-                <li key={index} className="py-4">
-                  <a
-                    href={item.href}
-                    onClick={(e) => {
-                      handleNavigation(e, item.href);
-                      toggleNavbar(); // Tutup drawer setelah klik
-                    }}
-                    className="text-white text-2xl"
-                  >
-                    {item.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
+          {/* Mobile Drawer Menu */}
+          {mobileDrawerOpen && (
+            <div className="fixed h-screen right-0 left-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
+              <ul>
+                {navItems.map((item, index) => (
+                  <li key={index} className="py-4">
+                    <a 
+                      href={item.href}
+                      onClick={(e) => handleNavigation(e, item.href)} // Cegah reload dan gunakan navigate
+                    >
+                      {item.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
       </nav>
     </div>
   );
