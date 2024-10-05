@@ -17,7 +17,7 @@ const Workflow = () => {
         Commitment
         </span>
       </h2>
-      <div className="flex flex-col md:flex-row items-center justify-center mt-20">
+      <div className="flex flex-col lg:flex-row items-center justify-center ">
         <div className="p-10 shadow-xl">
           <img src="https://mtg.gold/img/about/about.png" alt="Coding" />
         </div>
