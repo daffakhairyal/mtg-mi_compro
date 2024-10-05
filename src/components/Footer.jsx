@@ -1,4 +1,4 @@
-import { resourcesLinks, platformLinks, communityLinks } from "../constants";
+import { resourcesLinks, platformLinks, communityLinks, businessLink } from "../constants";
 import pdf from "../statics/compro.pdf"
 import { FaDownload } from "react-icons/fa";
 const Footer = () => {
@@ -53,7 +53,7 @@ Provinsi Banten</p>
         <div>
           <h3 className="text-md font-semibold mb-4">Core Business</h3>
           <ul className="space-y-2">
-            {communityLinks.map((link, index) => (
+            {businessLink.map((link, index) => (
               <li key={index}>
                 <a
                   href={link.href}

@@ -149,3 +149,9 @@ export const communityLinks = [
   { href: "/job-opportunity", text: "Jobs" },
   { href: "/contact", text: "Contact" },
 ];
+
+export const businessLink = [
+  { href: "/services#fine", text: "Fine Gold" },
+  { href: "/services#refining", text: "Refining" },
+  { href: "/services#trading", text: "Trading" },
+];
