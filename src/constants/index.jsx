@@ -20,6 +20,7 @@ export const navItems = [
   { label: "Services", href: "/services" },
   { label: "Our Products", href: "/products" },
   { label: "Contact", href: "/contact" },
+  { label: "Job", href: "/job-opportunity" },
 ];
 
 export const testimonials = [

@@ -1,5 +1,5 @@
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { navItems } from "../constants";
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
@@ -63,23 +63,24 @@ const Navbar = () => {
           </div>
         </div>
 
-          {/* Mobile Drawer Menu */}
-          {mobileDrawerOpen && (
-            <div className="fixed h-screen right-0 left-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
-              <ul>
-                {navItems.map((item, index) => (
-                  <li key={index} className="py-4">
-                    <a 
-                      href={item.href}
-                      onClick={(e) => handleNavigation(e, item.href)} // Cegah reload dan gunakan navigate
-                    >
-                      {item.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
+        {/* Mobile Drawer Menu */}
+        {mobileDrawerOpen && (
+          <div className="fixed h-screen right-0 left-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
+            <ul>
+              {navItems.map((item, index) => (
+                <li key={index} className="py-4">
+                  <a 
+                    href={item.href}
+                    onClick={(e) => handleNavigation(e, item.href)} // Cegah reload dan gunakan navigate
+                    className={`${item.label === "Job" ? "block lg:hidden" : "block"}`} // Menampilkan "Job" hanya di md ke bawah
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </nav>
     </div>
   );
