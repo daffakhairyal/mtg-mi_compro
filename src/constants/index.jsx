@@ -1,9 +1,10 @@
-import { BotMessageSquare } from "lucide-react";
+import { BotMessageSquare, Briefcase } from "lucide-react";
 import { BatteryCharging } from "lucide-react";
 import { Fingerprint } from "lucide-react";
 import { ShieldHalf } from "lucide-react";
 import { PlugZap } from "lucide-react";
 import { GlobeLock } from "lucide-react";
+import { MdOutlinePrecisionManufacturing } from "react-icons/md";
 
 import user1 from "../assets/profile-pictures/user1.jpg";
 import user2 from "../assets/profile-pictures/user2.jpg";
@@ -11,145 +12,116 @@ import user3 from "../assets/profile-pictures/user3.jpg";
 import user4 from "../assets/profile-pictures/user4.jpg";
 import user5 from "../assets/profile-pictures/user5.jpg";
 import user6 from "../assets/profile-pictures/user6.jpg";
+import { FaIndustry, FaLightbulb, FaRobot } from "react-icons/fa";
 
 export const navItems = [
-  { label: "Features", href: "#" },
-  { label: "Workflow", href: "#" },
-  { label: "Pricing", href: "#" },
-  { label: "Testimonials", href: "#" },
+  { label: "Home", href: "/" },
+  { label: "Profile", href: "/profile" },
+  { label: "Services", href: "/services" },
+  { label: "Our Products", href: "/products" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export const testimonials = [
   {
-    user: "John Doe",
+    user: "Andi Prasetyo",
     company: "Stellar Solutions",
     image: user1,
-    text: "I am extremely satisfied with the services provided. The team was responsive, professional, and delivered results beyond my expectations.",
+    text: "MTG-GOLD memberikan layanan yang luar biasa dalam pemurnian emas. Prosesnya cepat, efisien, dan hasilnya selalu memuaskan. Timnya sangat profesional dan selalu siap membantu!",
   },
   {
-    user: "Jane Smith",
+    user: "Rina Sari",
     company: "Blue Horizon Technologies",
     image: user2,
-    text: "I couldn't be happier with the outcome of our project. The team's creativity and problem-solving skills were instrumental in bringing our vision to life",
+    text: "Saya telah bekerja sama dengan MTG-GOLD selama beberapa tahun dan tidak pernah kecewa. Mereka selalu menyediakan harga yang kompetitif untuk trading emas dan proses fine gold sangat transparan. Sangat direkomendasikan!",
   },
   {
-    user: "David Johnson",
+    user: "Budi Santoso",
     company: "Quantum Innovations",
     image: user3,
-    text: "Working with this company was a pleasure. Their attention to detail and commitment to excellence are commendable. I would highly recommend them to anyone looking for top-notch service.",
+    text: "MTG-GOLD adalah pilihan terbaik untuk semua kebutuhan pemrosesan emas. Kualitas layanan dan keandalan mereka luar biasa. Mereka benar-benar memahami industri dan selalu memberikan saran terbaik",
   },
   {
-    user: "Ronee Brown",
+    user: "John Constantine",
     company: "Fusion Dynamics",
     image: user4,
-    text: "Working with the team at XYZ Company was a game-changer for our project. Their attention to detail and innovative solutions helped us achieve our goals faster than we thought possible. We are grateful for their expertise and professionalism!",
+    text: "Pengalaman saya dengan MTG-GOLD sangat positif. Mereka tidak hanya melakukan refining dengan baik, tetapi juga memberikan dukungan penuh selama proses trading. Tim yang profesional dan berpengalaman!",
   },
   {
-    user: "Michael Wilson",
+    user: "Rudi Setiawan",
     company: "Visionary Creations",
     image: user5,
-    text: "I am amazed by the level of professionalism and dedication shown by the team. They were able to exceed our expectations and deliver outstanding results.",
+    text: "Saya sangat terkesan dengan proses fine gold yang ditawarkan oleh MTG-GOLD. Hasil akhirnya sangat memuaskan dan harga yang ditawarkan sangat adil. Saya pasti akan kembali!",
   },
   {
-    user: "Emily Davis",
+    user: "Siti Aisyah",
     company: "Synergy Systems",
     image: user6,
-    text: "The team went above and beyond to ensure our project was a success. Their expertise and dedication are unmatched. I look forward to working with them again in the future.",
+    text: "MTG-GOLD telah menjadi mitra terpercaya saya dalam bisnis emas. Layanan mereka selalu cepat dan responsif, serta kualitas pemurnian emas mereka tidak ada duanya. Sangat merekomendasikan kepada siapa pun yang mencari layanan di industri ini!",
   },
 ];
 
 export const features = [
   {
-    icon: <BotMessageSquare />,
-    text: "Drag-and-Drop Interface",
+    icon: <FaLightbulb/>,
+    text: "Innovate Plan & Strategy",
     description:
-      "Easily design and arrange your VR environments with a user-friendly drag-and-drop interface.",
+      "We plan to build and strategy to always win in all parties in the gold business industry.",
   },
   {
-    icon: <Fingerprint />,
-    text: "Multi-Platform Compatibility",
+    icon: <Briefcase/>,
+    text: "Professional Peoples",
     description:
-      "Build VR applications that run seamlessly across multiple platforms, including mobile, desktop, and VR headsets.",
+      "Human expertise is a valuable asset, professional and effective work makes companies and clients always grow exponentially.",
   },
   {
-    icon: <ShieldHalf />,
-    text: "Built-in Templates",
+    icon: <MdOutlinePrecisionManufacturing className="text-2xl"/>,
+    text: "Hi-Tech Process Machine",
     description:
-      "Jumpstart your VR projects with a variety of built-in templates for different types of applications and environments.",
+      "Our modern gold processing machines make the product have high value in terms of quality and market trading",
   },
-  {
-    icon: <BatteryCharging />,
-    text: "Real-Time Preview",
-    description:
-      "Preview your VR application in real-time as you make changes, allowing for quick iterations and adjustments.",
-  },
-  {
-    icon: <PlugZap />,
-    text: "Collaboration Tools",
-    description:
-      "Work together with your team in real-time on VR projects, enabling seamless collaboration and idea sharing.",
-  },
-  {
-    icon: <GlobeLock />,
-    text: "Analytics Dashboard",
-    description:
-      "Gain valuable insights into user interactions and behavior within your VR applications with an integrated analytics dashboard.",
-  },
+ 
 ];
 
 export const checklistItems = [
   {
-    title: "Code merge made easy",
-    description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+    title: "Realizing real movement",
   },
   {
-    title: "Review code without worry",
-    description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+    title: "building the economy of the family, people, nation and state",
   },
   {
-    title: "AI Assistance to reduce time",
-    description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+    title: "For the sake of the rise of the global economy",
+  },
+];
+
+export const background = [
+  {
+    description: "PT. MTG Mulia Indonesia (MTG) started a business in mining, trading and gold refining in eastern Indonesia, especially the Papua region, Nabire because as we all know Papua is an Indonesian region that has the potential to be the biggest gold producer.",
   },
   {
-    title: "Share work in minutes",
-    description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+    description: "Our refining factory is in Tangerang and our Gold Dores Logistic Centers are in Banda Aceh, Pangkalan Bun, Manado, Halmahera, and Nabire.",
   },
 ];
 
 export const pricingOptions = [
   {
-    title: "Free",
-    price: "$0",
-    features: [
-      "Private board sharing",
-      "5 Gb Storage",
-      "Web Analytics",
-      "Private Mode",
-    ],
+    title: "Fine Gold",
+    description: "Fine Gold Processing",
+    image:"https://mtg.gold/img/service/serv_1.png",
+    id:"fine"
   },
   {
-    title: "Pro",
-    price: "$10",
-    features: [
-      "Private board sharing",
-      "10 Gb Storage",
-      "Web Analytics (Advance)",
-      "Private Mode",
-    ],
+    title: "Refining",
+    description: "Processing for high quality gold products",
+    image:"https://mtg.gold/img/service/serv_2.png",
+    id:"refining",
   },
   {
-    title: "Enterprise",
-    price: "$200",
-    features: [
-      "Private board sharing",
-      "Unlimited Storage",
-      "High Performance Network",
-      "Private Mode",
-    ],
+    title: "Trading",
+    description: "Creating strategic for gold market need",
+    image:"https://mtg.gold/img/service/serv_3.png",
+    id:"trading"
   },
 ];
 
@@ -162,17 +134,18 @@ export const resourcesLinks = [
 ];
 
 export const platformLinks = [
-  { href: "#", text: "Features" },
-  { href: "#", text: "Supported Devices" },
-  { href: "#", text: "System Requirements" },
-  { href: "#", text: "Downloads" },
-  { href: "#", text: "Release Notes" },
+  { href: "#", text: "Gold Investment" },
+  { href: "#", text: "Fine Gold" },
+  { href: "#", text: "Gold Refining" },
+  { href: "#", text: "Coin Gold Trading" },
+  { href: "#", text: "Gold Crypto" },
 ];
 
 export const communityLinks = [
-  { href: "#", text: "Events" },
-  { href: "#", text: "Meetups" },
-  { href: "#", text: "Conferences" },
-  { href: "#", text: "Hackathons" },
-  { href: "#", text: "Jobs" },
+  { href: "/", text: "Home" },
+  { href: "/profile", text: "Profile" },
+  { href: "/services", text: "Services" },
+  { href: "/products", text: "Products" },
+  { href: "/job-opportunity", text: "Jobs" },
+  { href: "/contact", text: "Contact" },
 ];

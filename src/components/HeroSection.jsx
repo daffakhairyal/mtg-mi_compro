@@ -1,52 +1,79 @@
-import video1 from "../assets/video1.mp4";
-import video2 from "../assets/video2.mp4";
+import React, { useRef } from "react";
+import Slider from "react-slick";
+import { FaChevronRight } from "react-icons/fa";
+import { FaChevronLeft } from "react-icons/fa";
+import FeatureSection from "./FeatureSection";
 
 const HeroSection = () => {
+  const sliderRef = useRef(null); // Membuat referensi untuk slider
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    fade: true,
+    pauseOnHover: false,
+    arrows: false, // Matikan tombol default dari react-slick
+  };
+
+  const slides = [
+    {
+      title: "REFINING TRADING AND GOLD",
+      description: "We carry out detailed processes to produce high quality gold products",
+      image: "https://mtg.gold/img/banner/banner2.png",
+    },
+    {
+      title: "A SAFE VALUABLE INVESTMENT IN GOLD",
+      description: "Build peace of mind in gold business in any condition and anywhere",
+      image: "https://mtg.gold/img/banner/banner3.png",
+    },
+    {
+      title: "EASILY SELL GOLD COINS ON CRYPTO MARKET",
+      description: "Participate in creating a gold coin platform for a dynamic trading ecosystem",
+      image: "https://mtg.gold/img/banner/banner.png",
+    },
+  ];
+
   return (
-    <div className="flex flex-col items-center mt-6 lg:mt-20">
-      <h1 className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">
-        VirtualR build tools
-        <span className="bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text">
-          {" "}
-          for developers
-        </span>
-      </h1>
-      <p className="mt-10 text-lg text-center text-neutral-500 max-w-4xl">
-        Empower your creativity and bring your VR app ideas to life with our
-        intuitive development tools. Get started today and turn your imagination
-        into immersive reality!
-      </p>
-      <div className="flex justify-center my-10">
-        <a
-          href="#"
-          className="bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md"
-        >
-          Start for free
-        </a>
-        <a href="#" className="py-3 px-4 mx-3 rounded-md border">
-          Documentation
-        </a>
-      </div>
-      <div className="flex mt-10 justify-center">
-        <video
-          autoPlay
-          loop
-          muted
-          className="rounded-lg w-1/2 border border-orange-700 shadow-sm shadow-orange-400 mx-2 my-4"
-        >
-          <source src={video1} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <video
-          autoPlay
-          loop
-          muted
-          className="rounded-lg w-1/2 border border-orange-700 shadow-sm shadow-orange-400 mx-2 my-4"
-        >
-          <source src={video2} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
+    <div className="relative">
+      <Slider ref={sliderRef} {...settings}>
+        {slides.map((slide, index) => (
+          <div key={index} className="relative">
+            <img
+              src={slide.image}
+              alt={slide.title}
+              className="w-full h-[900px] object-cover"
+            />
+            {/* Overlay Gradien Hitam */}
+            <div className="absolute inset-0 bg-black opacity-50"></div>
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-5 z-10 ">
+              <h1 className="text-4xl xl:text-6xl font-bold mb-4 w-3/4">{slide.title}</h1>
+              <p className="text-lg lg:text-xl max-w-2xl">{slide.description}</p>
+            </div>
+          </div>
+        ))}
+      </Slider>
+      
+      {/* Tombol Next dan Prev */}
+      <button
+        className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white text-2xl bg-gray-800 p-2 rounded-full duration-300 hover:scale-110"
+        onClick={() => sliderRef.current.slickPrev()}
+      >
+        <FaChevronLeft />
+      </button>
+      <button
+        className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white text-2xl bg-gray-800 p-2 rounded-full duration-300 hover:scale-110"
+        onClick={() => sliderRef.current.slickNext()}
+      >
+        <FaChevronRight />
+      </button>
+
+    
+
     </div>
   );
 };
