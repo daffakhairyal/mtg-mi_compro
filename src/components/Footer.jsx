@@ -3,8 +3,8 @@ import pdf from "../statics/compro.pdf"
 import { FaDownload } from "react-icons/fa";
 const Footer = () => {
   return (
-    <footer className="mt-20 mb-10 p-10">
-      <div className="flex justify-between border-b border-neutral-700">
+    <footer className="mt-20 mb-10 py-10 px-5">
+      <div className="flex flex-col md:flex-row justify-between border-b border-neutral-700">
       <div className="flex items-center flex-shrink-0">
               <img className="mr-2 w-2/3 md:w-full" src="https://mtg.gold/img/logo.png" alt="Logo" />
             </div>
