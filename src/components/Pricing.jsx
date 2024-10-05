@@ -10,6 +10,8 @@ const Pricing = () => {
     speed: 500,
     slidesToShow: 3, // Tampilkan 3 item di layar besar
     slidesToScroll: 1,
+    autoplay: true, // Aktifkan autoplay
+    autoplaySpeed: 3000,
     responsive: [
       {
         breakpoint: 1024, // untuk layar medium
