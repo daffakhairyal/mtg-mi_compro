@@ -12,8 +12,13 @@ const Footer = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6 place-content-center pt-4">
         <div className="flex flex-col"> 
-          <h3 className="text-md font-semibold mb-4">About</h3>
-          <p className="font-extralight text-sm text-justify">We started a business in mining, trading and gold refining in eastern Indonesia, especially the Papua region, Nabire because as we all know Papua is an Indonesian region that has the potential to be the biggest gold producer.</p>
+          <h3 className="text-md font-semibold mb-4">Our Location</h3>
+          <p className="font-semibold text-sm text-justify italic">Main Office</p>
+          <p className="font-thin text-xs text-justify mb-4 italic">Taman Tekno BSD
+Blok F1/FG, Kelurahan Setu Kecamatan Setu, Kota Tangerang Selatan
+Provinsi Banten</p>
+<p className="font-semibold text-sm text-justify italic">Workshop</p>
+          <p className="font-thin text-xs text-justify italic">Jl. Semarang No. 2 Karang Mulia Nabire – Papua Tengah</p>
         </div>
         <div>
           <h3 className="text-md font-semibold mb-4">Products</h3>
