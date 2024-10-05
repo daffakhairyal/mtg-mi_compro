@@ -11,8 +11,8 @@ const Footer = () => {
       <a href={pdf} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center px-3 py-5 border border-neutral-500 text-xl my-2 duration-300 hover:text-yellow-600 hover:border-yellow-600"><FaDownload className="mx-3"/>DOWNLOAD COMPANY PROFILE</a>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6 pt-4">
-        <div>
-          <h3 className="text-md font-semibold mb-4 px-10">About</h3>
+        <div className="flex flex-col"> 
+          <h3 className="text-md font-semibold mb-4 lg:px-10">About</h3>
           <p className="font-extralight text-sm text-justify">We started a business in mining, trading and gold refining in eastern Indonesia, especially the Papua region, Nabire because as we all know Papua is an Indonesian region that has the potential to be the biggest gold producer.</p>
         </div>
         <div>
