@@ -1,0 +1,19 @@
+@keyframes animation {
+    0% {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .animation-scroll.animate {
+    animation: animation 1s ease forwards;
+    opacity: 1;
+    transform: translateY(0); /* 0.5s adalah durasi animasi */
+  }
+  .animation-scroll{
+    opacity: 0;
+  }

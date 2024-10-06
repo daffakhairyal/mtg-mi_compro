@@ -6,6 +6,7 @@ import Pricing from "../components/Pricing";
 import Testimonials from "../components/Testimonials";
 import FeatureSection from "../components/FeatureSection";
 import "./Home.css";
+import CompanyInfo from "../components/CompanyInfo";
 
 const Home = () => {
   const [isFeatureVisible, setIsFeatureVisible] = useState(false);
@@ -107,7 +108,7 @@ const Home = () => {
           ref={footerRef}
           className={`animation-scroll ${isFooterVisible ? 'animate' : ''}`}
         >
-      
+          <CompanyInfo/>
         </div>
       </div>
     </>

@@ -16,7 +16,7 @@ const Overview = () => {
   };
 
   return (
-    <div className="min-h-screen p-6 md:p-12">
+    <div className="min-h-screen p-6">
       {/* Header Section */}
       <div className="text-center">
         <h1 className="text-4xl md:text-6xl font-bold mb-6">Overview</h1>
@@ -27,14 +27,14 @@ const Overview = () => {
       </div>
 
       {/* Carousel Section */}
-      <div className="mb-10">
+      <div className="mb-5">
         <Slider {...settings}>
           <div className="w-full h-[500px]">
             <div className="w-full h-full overflow-hidden">
               <img
                 src="https://mtg.gold/img/about/over.png"
                 alt="Gold Mining 1"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover duration-300 hover:scale-110"
               />
             </div>
           </div>
@@ -43,7 +43,7 @@ const Overview = () => {
               <img
                 src="https://m-mtoday.com/wp-content/uploads/sites/12/2023/10/benefits-of-gold-mining-image-800x445.jpeg"
                 alt="Gold Mining 2"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover duration-300 hover:scale-110"
               />
             </div>
           </div>
@@ -52,7 +52,7 @@ const Overview = () => {
               <img
                 src="https://investingnews.com/media-library/close-up-lump-of-gold-mine-background-texture.jpg?id=33607737&width=1200&height=800&quality=80&coordinates=0%2C0%2C0%2C1"
                 alt="Gold Mining 3"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover duration-300 hover:scale-110"
               />
             </div>
           </div>
@@ -71,7 +71,7 @@ const Overview = () => {
           Banten area known as the Cikotok gold mine owned by PT Aneka Tambang. Apart from that, there 
           were also other relatively small discoveries of gold deposits.
         </p>
-        <p className="text-lg leading-relaxed mb-4">
+        <p className="text-lg leading-relaxed ">
           In 1939, total gold metal production was recorded at 2.5 tons, half of which came from Lebong Tandai. 
           During World War II, all of these gold mines were closed and after the war only a few mines were 
           reopened including the Cikotok Gold Mine. Gold production since the end of World War II until the 
