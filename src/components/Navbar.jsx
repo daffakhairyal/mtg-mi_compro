@@ -1,5 +1,5 @@
 import { Menu, X } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { navItems } from "../constants";
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <div className="fixed top-0 right-0 left-0 z-10 backdrop-blur-lg border-b border-neutral-700/80">
       {/* Top Bar */}
-      <div className="hidden md:flex items-center justify-around text-white">
+      <div className="hidden lg:flex items-center justify-around text-white">
         <p className="py-2 px-3">Active Hour : 09.00 - 17.00 WIB</p>
         <a
           href="/job-opportunity"
@@ -31,7 +31,7 @@ const Navbar = () => {
       </div>
 
       {/* Navbar */}
-      <nav className="sticky top-0 z-50 py-3 ">
+      <nav className="sticky top-0 z-50 py-3">
         <div className="container px-4 mx-auto relative lg:text-sm">
           <div className="flex justify-between items-center">
             {/* Logo */}
@@ -42,22 +42,25 @@ const Navbar = () => {
             {/* Mobile Menu Toggle */}
             <div className="block lg:hidden">
               <button onClick={toggleNavbar} className="text-white focus:outline-none">
-                {mobileDrawerOpen ? <X size={24}/> : <Menu size={24}/>}
+                {mobileDrawerOpen ? <X size={24} /> : <Menu size={24} />}
               </button>
             </div>
 
             {/* Desktop Menu */}
             <ul className="hidden lg:flex space-x-12">
               {navItems.map((item, index) => (
-                <li key={index}>
-                  <a
-                    href={item.href}
-                    onClick={(e) => handleNavigation(e, item.href)}
-                    className="text-white duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800"
-                  >
-                    {item.label}
-                  </a>
-                </li>
+                // Tambahkan kondisi untuk mengecualikan "Job" dari desktop menu
+                item.label !== "Job" && (
+                  <li key={index}>
+                    <a
+                      href={item.href}
+                      onClick={(e) => handleNavigation(e, item.href)}
+                      className="text-white duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800"
+                    >
+                      {item.label}
+                    </a>
+                  </li>
+                )
               ))}
             </ul>
           </div>
