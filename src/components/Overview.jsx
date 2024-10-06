@@ -29,26 +29,32 @@ const Overview = () => {
       {/* Carousel Section */}
       <div className="mb-10">
         <Slider {...settings}>
-          <div>
-            <img
-              src="https://mtg.gold/img/about/over.png" // Gambar pertama
-              alt="Gold Mining 1"
-              className="w-full h-full object-cover rounded-lg shadow-lg"
-            />
+          <div className="w-full h-[500px]">
+            <div className="w-full h-full overflow-hidden">
+              <img
+                src="https://mtg.gold/img/about/over.png"
+                alt="Gold Mining 1"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
-          <div>
-            <img
-              src="https://m-mtoday.com/wp-content/uploads/sites/12/2023/10/benefits-of-gold-mining-image-800x445.jpeg" // Gambar kedua
-              alt="Gold Mining 2"
-              className="w-full h-full object-cover rounded-lg shadow-lg"
-            />
+          <div className="w-full h-[500px]">
+            <div className="w-full h-full overflow-hidden">
+              <img
+                src="https://m-mtoday.com/wp-content/uploads/sites/12/2023/10/benefits-of-gold-mining-image-800x445.jpeg"
+                alt="Gold Mining 2"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
-          <div>
-            <img
-              src="https://investingnews.com/media-library/close-up-lump-of-gold-mine-background-texture.jpg?id=33607737&width=1200&height=800&quality=80&coordinates=0%2C0%2C0%2C1" // Gambar ketiga
-              alt="Gold Mining 3"
-              className="w-full h-full object-cover rounded-lg shadow-lg"
-            />
+          <div className="w-full h-[500px]">
+            <div className="w-full h-full overflow-hidden">
+              <img
+                src="https://investingnews.com/media-library/close-up-lump-of-gold-mine-background-texture.jpg?id=33607737&width=1200&height=800&quality=80&coordinates=0%2C0%2C0%2C1"
+                alt="Gold Mining 3"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </Slider>
       </div>
