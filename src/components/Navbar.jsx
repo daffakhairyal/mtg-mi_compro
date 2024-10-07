@@ -48,20 +48,71 @@ const Navbar = () => {
 
             {/* Desktop Menu */}
             <ul className="hidden lg:flex space-x-12">
-              {navItems.map((item, index) => (
-                // Tambahkan kondisi untuk mengecualikan "Job" dari desktop menu
-                item.label !== "Job" && (
-                  <li key={index}>
-                    <a
-                      href={item.href}
-                      onClick={(e) => handleNavigation(e, item.href)}
-                      className="text-white duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800"
-                    >
-                      {item.label}
-                    </a>
-                  </li>
-                )
-              ))}
+              <li>
+                <a
+                  href="/"
+                  onClick={(e) => handleNavigation(e, "/")}
+                  className="text-white duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800"
+                >
+                  Home
+                </a>
+              </li>
+
+              {/* Profile Megamenu */}
+              <li className="relative group">
+                <a
+                  href="#"
+                  className="text-white duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800"
+                >
+                  Profile
+                </a>
+                <div className="absolute hidden group-hover:flex group-hover:flex-col bg-neutral-800 p-5 rounded shadow-lg top-full left-0 w-[200px] space-y-5 duration-300 ">
+                <a href="/profile" className="text-white hover:underline duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800">Company</a>
+                <a href="#" className="text-white hover:underline duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800">History</a>
+                  <a href="#" className="text-white hover:underline duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800">Management</a>
+                  <a href="#" className="text-white hover:underline duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800">Our Team</a>
+                  <a href="#" className="text-white hover:underline duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800">Legality</a>
+                </div>
+              </li>
+
+              {/* Services Megamenu */}
+              <li className="relative group">
+                <a
+                  href="#"
+                  className="text-white duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800"
+                >
+                  Services
+                </a>
+                <div className="absolute hidden group-hover:flex group-hover:flex-col bg-neutral-800 p-5 rounded shadow-lg top-full left-0 w-[200px] space-y-5">
+                  <a href="#" className="text-white hover:underline duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800">Consulting</a>
+                  <a href="#" className="text-white hover:underline duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800">Gold Refining</a>
+                  <a href="#" className="text-white hover:underline duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800">Logistics</a>
+                </div>
+              </li>
+
+              {/* Our Products Megamenu */}
+              <li className="relative group">
+                <a
+                  href="#"
+                  className="text-white duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800"
+                >
+                  Our Products
+                </a>
+                <div className="absolute hidden group-hover:flex group-hover:flex-col bg-neutral-800 p-5 rounded shadow-lg top-full left-0 w-[200px] space-y-5">
+                  <a href="#" className="text-white hover:underline duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800">Gold Bars</a>
+                  <a href="#" className="text-white hover:underline duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800">Jewelry</a>
+                </div>
+              </li>
+
+              <li>
+                <a
+                  href="/"
+                  onClick={(e) => handleNavigation(e, "/contact")}
+                  className="text-white duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800"
+                >
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
         </div>
