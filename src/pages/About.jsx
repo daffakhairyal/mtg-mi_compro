@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Overview from '../components/Overview';
 import VisionMission from '../components/VisionMission';
 import "./About.css";
+import OurTeam from '../components/OurTeam';
 
 const About = () => {
   const [isOverviewVisible, setIsOverviewVisible] = useState(false);

@@ -10,6 +10,8 @@ import Job from './pages/Job';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer from './components/Footer';
+import OurTeam from './components/OurTeam';
+import Management from './pages/Management';
 
 
 function App() {
@@ -24,6 +26,7 @@ function App() {
           <Route path="/products" element={<Products/>} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="/job-opportunity" element={<Job/>} />
+          <Route path="/management" element={<Management/>}/>
         </Routes>
         <Footer/>
       </div>

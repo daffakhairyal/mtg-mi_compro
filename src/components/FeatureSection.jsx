@@ -17,7 +17,7 @@ const FeatureSection = () => {
 
               <div className="flex flex-col justify-center ">
 
-                <p className="text-md text-center p-2 mb-10 text-neutral-500">
+                <p className="text-sm text-center p-2 mb-10 text-neutral-500">
                   {feature.description}
                 </p>
               </div>

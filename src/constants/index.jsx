@@ -5,7 +5,7 @@ import { ShieldHalf } from "lucide-react";
 import { PlugZap } from "lucide-react";
 import { GlobeLock } from "lucide-react";
 import { MdOutlinePrecisionManufacturing } from "react-icons/md";
-
+import { FaPeopleCarry } from "react-icons/fa";
 import user1 from "../assets/profile-pictures/user1.jpg";
 import user2 from "../assets/profile-pictures/user2.jpg";
 import user3 from "../assets/profile-pictures/user3.jpg";
@@ -13,6 +13,7 @@ import user4 from "../assets/profile-pictures/user4.jpg";
 import user5 from "../assets/profile-pictures/user5.jpg";
 import user6 from "../assets/profile-pictures/user6.jpg";
 import { FaIndustry, FaLightbulb, FaRobot } from "react-icons/fa";
+import { GoLaw } from "react-icons/go";
 
 export const navItems = [
   { label: "Home", href: "/" },
@@ -28,58 +29,58 @@ export const testimonials = [
     user: "Andi Prasetyo",
     company: "Stellar Solutions",
     image: user1,
-    text: "MTG-GOLD memberikan layanan yang luar biasa dalam pemurnian emas. Prosesnya cepat, efisien, dan hasilnya selalu memuaskan. Timnya sangat profesional dan selalu siap membantu!",
+    text: "PT. ABN telah memberikan banyak manfaat bagi kami para purna bakti. Saya sangat mengapresiasi usaha yang dilakukan untuk meningkatkan kesejahteraan kami. Mereka berhasil memberikan kesempatan bagi kami untuk tetap produktif dan berkontribusi kepada masyarakat",
   },
   {
     user: "Rina Sari",
     company: "Blue Horizon Technologies",
     image: user2,
-    text: "Saya telah bekerja sama dengan MTG-GOLD selama beberapa tahun dan tidak pernah kecewa. Mereka selalu menyediakan harga yang kompetitif untuk trading emas dan proses fine gold sangat transparan. Sangat direkomendasikan!",
+    text: "Sebagai mitra usaha, saya sangat puas dengan profesionalisme PT. ABN dalam bidang jasa dan perdagangan. Mereka selalu mengutamakan kepentingan bersama dan menjalin hubungan bisnis yang saling menguntungkan.",
   },
   {
     user: "Budi Santoso",
     company: "Quantum Innovations",
     image: user3,
-    text: "MTG-GOLD adalah pilihan terbaik untuk semua kebutuhan pemrosesan emas. Kualitas layanan dan keandalan mereka luar biasa. Mereka benar-benar memahami industri dan selalu memberikan saran terbaik",
+    text: "Visi dan misi PT. ABN benar-benar terasa dalam upaya mereka memberdayakan para purna bakti. Berkat dukungan dan program yang disediakan, saya merasa lebih produktif dan tetap semangat menjalani masa purna bakti.",
   },
   {
     user: "John Constantine",
     company: "Fusion Dynamics",
     image: user4,
-    text: "Pengalaman saya dengan MTG-GOLD sangat positif. Mereka tidak hanya melakukan refining dengan baik, tetapi juga memberikan dukungan penuh selama proses trading. Tim yang profesional dan berpengalaman!",
+    text: "Pelayanan yang diberikan oleh PT. ABN luar biasa. Produk-produk perdagangan yang mereka sediakan berkualitas tinggi, dan timnya selalu siap membantu kapan saja. Saya sangat merekomendasikan PT. ABN bagi siapa pun yang mencari mitra yang profesional dan tepercaya.",
   },
   {
     user: "Rudi Setiawan",
     company: "Visionary Creations",
     image: user5,
-    text: "Saya sangat terkesan dengan proses fine gold yang ditawarkan oleh MTG-GOLD. Hasil akhirnya sangat memuaskan dan harga yang ditawarkan sangat adil. Saya pasti akan kembali!",
+    text: "Kerja sama dengan PT. ABN selalu menyenangkan. Perusahaan ini menunjukkan dedikasi yang tinggi dalam melayani pelanggan dan mendukung para purna bakti. Mereka adalah contoh ideal dalam menjalankan misi sosial sambil tetap mempertahankan kualitas bisnis yang solid.",
   },
   {
     user: "Siti Aisyah",
     company: "Synergy Systems",
     image: user6,
-    text: "MTG-GOLD telah menjadi mitra terpercaya saya dalam bisnis emas. Layanan mereka selalu cepat dan responsif, serta kualitas pemurnian emas mereka tidak ada duanya. Sangat merekomendasikan kepada siapa pun yang mencari layanan di industri ini!",
+    text: "Saya bangga menjadi bagian dari program-program PT. ABN. Selain membantu kami menjaga kesehatan dan kesejahteraan, PT. ABN juga memberi kesempatan untuk tetap terlibat dan berkontribusi bagi negeri ini. Terima kasih PT. ABN!",
   },
 ];
 
 export const features = [
   {
-    icon: <FaLightbulb/>,
-    text: "Innovate Plan & Strategy",
+    icon: <GoLaw className="text-2xl"/>,
+    text: "Kepemilikan dan Dukungan dari P2BBP Kemenkeu",
     description:
-      "We plan to build and strategy to always win in all parties in the gold business industry.",
+      "Didukung penuh oleh Perkumpulan Purna Bakti Kementerian Keuangan, memberikan stabilitas dan dukungan kelembagaan yang kuat.",
   },
   {
-    icon: <Briefcase/>,
-    text: "Professional Peoples",
+    icon: <FaPeopleCarry className="text-2xl"/>,
+    text: "Misi Sosial dan Ekonomi",
     description:
-      "Human expertise is a valuable asset, professional and effective work makes companies and clients always grow exponentially.",
+      "Berkomitmen pada kesejahteraan purna bakti Kemenkeu, menggabungkan tujuan komersial dengan pemberdayaan komunitas.",
   },
   {
-    icon: <MdOutlinePrecisionManufacturing className="text-2xl"/>,
-    text: "Hi-Tech Process Machine",
+    icon: <Briefcase className="text-2xl"/>,
+    text: "Manajemen Profesional",
     description:
-      "Our modern gold processing machines make the product have high value in terms of quality and market trading",
+      "Memiliki manajemen yang berpengalaman dan kompeten untuk meningkatkan kinerja dan daya saing perusahaan.",
   },
  
 ];
@@ -98,10 +99,10 @@ export const checklistItems = [
 
 export const background = [
   {
-    description: "PT. MTG Mulia Indonesia (MTG) started a business in mining, trading and gold refining in eastern Indonesia, especially the Papua region, Nabire because as we all know Papua is an Indonesian region that has the potential to be the biggest gold producer.",
+    description: "PT. Arta Bakti Nusantara disingkat PT. ABN adalah badan usaha yang didirikan dalam rangka memenuhi amanat Anggaran Dasar/Anggaran Rumah Tangga Perkumpulan Purna Bakti Pegawai Kementerian Keuangan (P2BBP Kemenkeu). PT. ABN berdiri tanggal 6 Maret 2019 berdasarkan Akta Notaris Khanief, SH, MKn Nomor 4 dimana 85% (delapan puluh lima persen) saham dimiliki oleh P2BP Kemenkeu yang saat ini dipimpin oleh Dr. Hadiyanto, SH, LLM. ",
   },
   {
-    description: "Our refining factory is in Tangerang and our Gold Dores Logistic Centers are in Banda Aceh, Pangkalan Bun, Manado, Halmahera, and Nabire.",
+    description: "PT ABN didirikan untuk menjalankan bisnis jasa dan perdagangan, dengan tujuan memperoleh dana bagi pembiayaan kegiatan P2BP Kemenkeu dalam rangka mencapai misinya yaitu mewujudkan kehidupan Purna Bakti Kemenkeu yang sehat lahir batin, semangat, produktif, sejahtera, dan yang berkontribusi bagi negeri dan sesama.",
   },
 ];
 

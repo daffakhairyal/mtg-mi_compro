@@ -22,18 +22,18 @@ const HeroSection = () => {
 
   const slides = [
     {
-      title: "REFINING TRADING AND GOLD",
-      description: "We carry out detailed processes to produce high quality gold products",
+      title: "TUJUAN JANGKA PANJANG UNTUK KEBERLANJUTAN",
+      description: "Memberdayakan purna bakti Kementerian Keuangan dengan visi jangka panjang yang berkelanjutan.",
       image: "https://mtg.gold/img/banner/banner2.png",
     },
     {
-      title: "A SAFE VALUABLE INVESTMENT IN GOLD",
-      description: "Build peace of mind in gold business in any condition and anywhere",
+      title: "MENGEMBANGKAN BISNIS JASA DAN PERDAGANGAN",
+      description: "Mengembangkan sektor jasa dan perdagangan untuk memberi manfaat ekonomi bagi pemegang saham dan pemangku kepentingan.",
       image: "https://mtg.gold/img/banner/banner3.png",
     },
     {
-      title: "EASILY SELL GOLD COINS ON CRYPTO MARKET",
-      description: "Participate in creating a gold coin platform for a dynamic trading ecosystem",
+      title: "MEMFASILITASI KONTRIBUSI SOSIAL",
+      description: "Memfasilitasi kontribusi sosial bagi purna bakti Kemenkeu untuk memberikan manfaat bagi negeri dan masyarakat.",
       image: "https://mtg.gold/img/banner/banner.png",
     },
   ];

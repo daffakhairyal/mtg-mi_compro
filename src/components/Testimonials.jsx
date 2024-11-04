@@ -4,9 +4,8 @@ const Testimonials = () => {
   return (
     <div className="mt-20 tracking-wide">
       <h2 className="text-4xl sm:text-4xl lg:text-5xl text-center my-10 lg:my-20">
-        What People are saying About {" "}
         <span className="bg-gradient-to-b from-yellow-500 to-yellow-800 text-transparent bg-clip-text">
-        MTG-GOLD
+        Testimoni
         </span>
       </h2>
       <div className="flex flex-wrap justify-center">

@@ -20,9 +20,10 @@ const Overview = () => {
       {/* Header Section */}
       <div className="text-center">
         <h1 className="text-4xl md:text-6xl font-bold mb-6">Overview</h1>
-        <p className="text-lg md:text-xl leading-relaxed mb-12 max-w-3xl mx-auto">
-          Realizing real movement, building the economy of the family, people, nation and state, 
-          for the sake of the rise of the global economy.
+        <p className="text-lg md:text-lg font-thin leading-relaxed mb-12 max-w-5xl mx-auto">
+        PT. Arta Bakti Nusantara disingkat PT. ABN adalah badan usaha yang didirikan dalam rangka
+ memenuhi amanat Anggaran Dasar/Anggaran Rumah Tangga Perkumpulan Purna Bakti Pegawai
+ Kementerian Keuangan (P2BBP Kemenkeu). 
         </p>
       </div>
 
@@ -61,24 +62,31 @@ const Overview = () => {
 
       {/* Content Section */}
       <div className="shadow-lg rounded-lg p-6 md:p-10 text-justify">
-        <h2 className="text-3xl font-bold mb-4">Gold Mining in Indonesia</h2>
-        <p className="text-lg leading-relaxed mb-4">
-          Gold mining in Indonesia began more than a thousand years ago with the arrival of immigrants 
-          from China who mined gold in several areas, followed by the Hindu Age, Dutch and Japanese 
-          occupation. During the Dutch colonial era (1600-1942) the development of gold mining was very limited. 
-          Several gold ore reserves discovered during this period were in the Lebong area, namely Lebong 
-          Donok and Lebong Tandai, Bengkulu Province. Another gold deposit discovery was in the South 
-          Banten area known as the Cikotok gold mine owned by PT Aneka Tambang. Apart from that, there 
-          were also other relatively small discoveries of gold deposits.
+        <h2 className="text-3xl font-bold mb-4">Sekilas Tentang <span className='text-yellow-600'>PT. Arta Bakti Nusantara</span></h2>
+        <p className="text-lg font-thin leading-relaxed mb-4">
+        PT. Arta Bakti Nusantara disingkat PT. ABN adalah badan usaha yang didirikan dalam rangka
+ memenuhi amanat Anggaran Dasar/Anggaran Rumah Tangga Perkumpulan Purna Bakti Pegawai
+ Kementerian Keuangan (P2BBP Kemenkeu). PT. ABN berdiri tanggal 6 Maret 2019 berdasarkan
+ Akta Notaris Khanief, SH, MKn Nomor 4 dimana 85% (delapan puluh lima persen) saham dimiliki
+ oleh P2BP Kemenkeu yang saat ini dipimpin oleh Dr. Hadiyanto, SH, LLM.
         </p>
-        <p className="text-lg leading-relaxed ">
-          In 1939, total gold metal production was recorded at 2.5 tons, half of which came from Lebong Tandai. 
-          During World War II, all of these gold mines were closed and after the war only a few mines were 
-          reopened including the Cikotok Gold Mine. Gold production since the end of World War II until the 
-          mid-1980s did not show a significant increase. Total recorded production in 1985 amounted to around 
-          2.6 tons, with more than 90% of this amount being a by-product of copper concentrate produced by 
-          PT Freeport Indonesia in Papua (formerly Irian Jaya).
+        <p className="text-lg font-thin leading-relaxed mb-4">
+        PT ABN didirikan untuk menjalankan bisnis jasa dan perdagangan, dengan tujuan memperoleh
+ dana bagi pembiayaan kegiatan P2BP Kemenkeu dalam rangka mencapai misinya yaitu
+ mewujudkan kehidupan Purna Bakti Kemenkeu yang sehat lahir batin, semangat, produktif,
+ sejahtera, dan yang berkontribusi bagi negeri dan sesama. 
         </p>
+        <p className="text-lg font-thin leading-relaxed mb-4">
+        Pada tanggal 17 Juli 2024 diadakan Rapat Umum Pemegang Saham Luar Biasa yang merombak
+ susunan Dewan Direksi dan Dewan Komisaris, yang disahkan melalui Pernyataan Keputusan
+ Rapat Umum Pemegang Saham Luar Biasa  Nomor 15, dibuat oleh Notaris/PPAT Abdul Haris,
+ dengan susunan sebagai berikut: (1) Direktur Utama: Cecilia Risyana, SE, Dipl. DF; (2) Direktur
+ Keuangan dan Operasi: Ir. Nuning Sri Rejeki Wulandari, MBA; (3) Komisaris Utama: Dr. Puspita
+ Wulandari, SE, MM, dan (4) Komisaris: Bambang Karuliawasto, Ak. MBA. Perombakan Dewan
+ Direksi dan Dewan Komisaris tersebut dalam rangka meningkatkan kinerja PT. ABN untuk
+ menuju lebih baik. 
+        </p>
+
       </div>
     </div>
   );

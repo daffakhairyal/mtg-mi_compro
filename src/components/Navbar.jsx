@@ -5,21 +5,28 @@ import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 const Navbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
+  const [activeMobileMenu, setActiveMobileMenu] = useState(null);
   const navigate = useNavigate(); // Menggunakan useNavigate untuk navigasi
 
   const toggleNavbar = () => {
     setMobileDrawerOpen(!mobileDrawerOpen);
+    setActiveMobileMenu(null);
   };
 
   const handleNavigation = (event, path) => {
-    event.preventDefault(); // Cegah reload halaman
     navigate(path); // Gunakan navigate untuk berpindah halaman
+    setMobileDrawerOpen(false); // Tutup drawer setelah navigasi
+    setActiveMobileMenu(null); // Reset mega menu setelah navigasi
+  };
+
+  const toggleSubMenu = (menu) => {
+    setActiveMobileMenu(activeMobileMenu === menu ? null : menu);
   };
 
   return (
-    <div className="fixed top-0 right-0 left-0 z-10 backdrop-blur-lg border-b border-neutral-700/80">
+    <div className={`fixed top-0 right-0 left-0 z-10 ${mobileDrawerOpen ? 'bg-neutral-900' : 'backdrop-blur-lg'} border-b border-neutral-700/80`}>
       {/* Top Bar */}
-      <div className="hidden lg:flex items-center justify-around text-white">
+      {/* <div className="hidden lg:flex items-center justify-around text-white">
         <p className="py-2 px-3">Active Hour : 09.00 - 17.00 WIB</p>
         <a
           href="/job-opportunity"
@@ -28,15 +35,15 @@ const Navbar = () => {
         >
           JOB OPPORTUNITY
         </a>
-      </div>
+      </div> */}
 
       {/* Navbar */}
-      <nav className="sticky top-0 z-50 py-3">
+      <nav className="sticky top-0 z-50 py-5">
         <div className="container px-4 mx-auto relative lg:text-sm">
           <div className="flex justify-between items-center">
             {/* Logo */}
             <div className="flex items-center flex-shrink-0">
-              <img className="mr-2 w-32 md:w-48" src="https://mtg.gold/img/logo.png" alt="Logo" />
+              <p className="text-yellow-600 text-xl font-semibold">LOGO</p>
             </div>
 
             {/* Mobile Menu Toggle */}
@@ -66,43 +73,26 @@ const Navbar = () => {
                 >
                   Profile
                 </a>
-                <div className="absolute hidden group-hover:flex group-hover:flex-col bg-neutral-800 p-5 rounded shadow-lg top-full left-0 w-[200px] space-y-5 duration-300 ">
+                <div className="absolute pt-5">
+                <div className="hidden group-hover:flex group-hover:flex-col bg-neutral-800 p-5 rounded shadow-lg top-full left-0 w-[200px] space-y-5 duration-300 ">
                 <a href="/profile" className="text-white hover:underline duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800">Company</a>
-                <a href="#" className="text-white hover:underline duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800">History</a>
-                  <a href="#" className="text-white hover:underline duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800">Management</a>
-                  <a href="#" className="text-white hover:underline duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800">Our Team</a>
+                  <a href="/management" className="text-white hover:underline duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800">Management</a>
                   <a href="#" className="text-white hover:underline duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800">Legality</a>
+                </div>
                 </div>
               </li>
 
               {/* Services Megamenu */}
               <li className="relative group">
                 <a
-                  href="#"
+                  href="/services"
                   className="text-white duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800"
                 >
                   Services
                 </a>
-                <div className="absolute hidden group-hover:flex group-hover:flex-col bg-neutral-800 p-5 rounded shadow-lg top-full left-0 w-[200px] space-y-5">
-                  <a href="#" className="text-white hover:underline duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800">Consulting</a>
-                  <a href="#" className="text-white hover:underline duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800">Gold Refining</a>
-                  <a href="#" className="text-white hover:underline duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800">Logistics</a>
-                </div>
               </li>
 
-              {/* Our Products Megamenu */}
-              <li className="relative group">
-                <a
-                  href="#"
-                  className="text-white duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800"
-                >
-                  Our Products
-                </a>
-                <div className="absolute hidden group-hover:flex group-hover:flex-col bg-neutral-800 p-5 rounded shadow-lg top-full left-0 w-[200px] space-y-5">
-                  <a href="#" className="text-white hover:underline duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800">Gold Bars</a>
-                  <a href="#" className="text-white hover:underline duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800">Jewelry</a>
-                </div>
-              </li>
+
 
               <li>
                 <a
