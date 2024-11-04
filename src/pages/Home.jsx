@@ -7,6 +7,7 @@ import Testimonials from "../components/Testimonials";
 import FeatureSection from "../components/FeatureSection";
 import "./Home.css";
 import CompanyInfo from "../components/CompanyInfo";
+import Activity from "../components/Activity";
 
 const Home = () => {
   const [isFeatureVisible, setIsFeatureVisible] = useState(false);
@@ -94,7 +95,7 @@ const Home = () => {
           ref={pricingRef}
           className={`animation-scroll ${isPricingVisible ? 'animate' : ''}`}
         >
-          <Pricing />
+          <Activity />
         </div>
 
         <div 
@@ -104,12 +105,12 @@ const Home = () => {
           <Testimonials />
         </div>
 
-        <div 
+        {/* <div 
           ref={footerRef}
           className={`animation-scroll ${isFooterVisible ? 'animate' : ''}`}
         >
           <CompanyInfo/>
-        </div>
+        </div> */}
       </div>
     </>
   );

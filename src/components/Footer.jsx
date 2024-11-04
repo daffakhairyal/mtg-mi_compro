@@ -16,7 +16,7 @@ const Footer = () => {
           <p className="font-semibold text-sm text-justify italic">Main Office</p>
           <p className="font-thin text-xs text-justify mb-4 italic">Menara Salemba Lantai 8 Suite 5B Jalan Salemba Raya Nomor 5 Paseban, Kecamatan Senen Jakarta Pusat (10440)n</p>
         </div>
-        <div>
+        {/* <div>
           <h3 className="text-md font-semibold mb-4">Products</h3>
           <ul className="space-y-2">
             {platformLinks.map((link, index) => (
@@ -30,7 +30,7 @@ const Footer = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
         <div>
           <h3 className="text-md font-semibold mb-4">Short Links</h3>
           <ul className="space-y-2">
@@ -46,7 +46,7 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-        <div>
+        {/* <div>
           <h3 className="text-md font-semibold mb-4">Core Business</h3>
           <ul className="space-y-2">
             {businessLink.map((link, index) => (
@@ -60,7 +60,7 @@ const Footer = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

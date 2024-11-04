@@ -83,21 +83,20 @@ const Navbar = () => {
               </li>
 
               {/* Services Megamenu */}
-              <li className="relative group">
+              {/* <li className="relative group">
                 <a
                   href="/services"
                   className="text-white duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800"
                 >
                   Services
                 </a>
-              </li>
+              </li> */}
 
 
 
               <li>
                 <a
-                  href="/"
-                  onClick={(e) => handleNavigation(e, "/contact")}
+                  href="/contact"
                   className="text-white duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800"
                 >
                   Contact
@@ -110,18 +109,28 @@ const Navbar = () => {
         {/* Mobile Drawer Menu */}
         {mobileDrawerOpen && (
           <div className="fixed h-screen right-0 left-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
-            <ul>
-              {navItems.map((item, index) => (
-                <li key={index} className="py-4">
-                  <a 
-                    href={item.href}
-                    onClick={(e) => handleNavigation(e, item.href)} // Cegah reload dan gunakan navigate
-                    className={`${item.label === "Job" ? "block lg:hidden" : "block"}`} // Menampilkan "Job" hanya di md ke bawah
-                  >
-                    {item.label}
-                  </a>
-                </li>
-              ))}
+            <ul className="space-y-6 text-center">
+              <li>
+                <a href="/" onClick={(e) => handleNavigation(e, "/")} className="text-white text-lg">Home</a>
+              </li>
+              
+              {/* Profile Mobile Mega Menu */}
+              <li className="relative">
+                <button onClick={() => toggleSubMenu("Profile")} className="text-white text-lg">
+                  Profile
+                </button>
+                {activeMobileMenu === "Profile" && (
+                  <div className="mt-2 space-y-4">
+                    <a href="/profile" onClick={(e) => handleNavigation(e, "/profile")} className="block text-white">Company</a>
+                    <a href="/management" onClick={(e) => handleNavigation(e, "/management")} className="block text-white">Management</a>
+                    <a href="#" className="block text-white">Legality</a>
+                  </div>
+                )}
+              </li>
+
+              <li>
+                <a href="/contact" onClick={(e) => handleNavigation(e, "/contact")} className="text-white text-lg">Contact</a>
+              </li>
             </ul>
           </div>
         )}

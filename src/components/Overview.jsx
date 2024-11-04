@@ -33,7 +33,7 @@ const Overview = () => {
           <div className="w-full h-[500px]">
             <div className="w-full h-full overflow-hidden">
               <img
-                src="https://mtg.gold/img/about/over.png"
+                src="https://akcdn.detik.net.id/visual/2024/01/10/suasana-gedung-kementerian-keuangan-kemenkeu-di-jakarta-rabu-1012024-3_169.jpeg?w=715&q=90"
                 alt="Gold Mining 1"
                 className="w-full h-full object-cover duration-300 hover:scale-110"
               />
@@ -42,7 +42,7 @@ const Overview = () => {
           <div className="w-full h-[500px]">
             <div className="w-full h-full overflow-hidden">
               <img
-                src="https://m-mtoday.com/wp-content/uploads/sites/12/2023/10/benefits-of-gold-mining-image-800x445.jpeg"
+                src="https://fiskal.kemenkeu.go.id/images/gedung-bkf.jpg?&s=m"
                 alt="Gold Mining 2"
                 className="w-full h-full object-cover duration-300 hover:scale-110"
               />
@@ -51,7 +51,7 @@ const Overview = () => {
           <div className="w-full h-[500px]">
             <div className="w-full h-full overflow-hidden">
               <img
-                src="https://investingnews.com/media-library/close-up-lump-of-gold-mine-background-texture.jpg?id=33607737&width=1200&height=800&quality=80&coordinates=0%2C0%2C0%2C1"
+                src="https://garuda.industry.co.id/uploads/berita/detail/1407.jpg"
                 alt="Gold Mining 3"
                 className="w-full h-full object-cover duration-300 hover:scale-110"
               />

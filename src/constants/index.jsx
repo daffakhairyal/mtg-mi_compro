@@ -18,10 +18,9 @@ import { GoLaw } from "react-icons/go";
 export const navItems = [
   { label: "Home", href: "/" },
   { label: "Profile", href: "/profile" },
-  { label: "Services", href: "/services" },
-  { label: "Our Products", href: "/products" },
+  // { label: "Services", href: "/services" },
+  // { label: "Our Products", href: "/products" },
   { label: "Contact", href: "/contact" },
-  { label: "Job", href: "/job-opportunity" },
 ];
 
 export const testimonials = [
@@ -148,7 +147,6 @@ export const communityLinks = [
   { href: "/profile", text: "Profile" },
   { href: "/services", text: "Services" },
   { href: "/products", text: "Products" },
-  { href: "/job-opportunity", text: "Jobs" },
   { href: "/contact", text: "Contact" },
 ];
 

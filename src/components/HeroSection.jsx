@@ -24,17 +24,17 @@ const HeroSection = () => {
     {
       title: "TUJUAN JANGKA PANJANG UNTUK KEBERLANJUTAN",
       description: "Memberdayakan purna bakti Kementerian Keuangan dengan visi jangka panjang yang berkelanjutan.",
-      image: "https://mtg.gold/img/banner/banner2.png",
+      image: "https://www.djkn.kemenkeu.go.id/files/images/2023/01/Kemenkeu.jpeg",
     },
     {
       title: "MENGEMBANGKAN BISNIS JASA DAN PERDAGANGAN",
       description: "Mengembangkan sektor jasa dan perdagangan untuk memberi manfaat ekonomi bagi pemegang saham dan pemangku kepentingan.",
-      image: "https://mtg.gold/img/banner/banner3.png",
+      image: "https://forumkeadilan.com/wp-content/uploads/2023/02/setoran-pajak-karbon-diprediksi-tak-besar-ini-kata-staf-khusus-menkeu-220915102945.jpg",
     },
     {
       title: "MEMFASILITASI KONTRIBUSI SOSIAL",
       description: "Memfasilitasi kontribusi sosial bagi purna bakti Kemenkeu untuk memberikan manfaat bagi negeri dan masyarakat.",
-      image: "https://mtg.gold/img/banner/banner.png",
+      image: "https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/krjogja/news/2022/10/27/478512/pindah-ke-ikn-gedung-pemerintahan-di-jakarta-bakal-disewakan-221027z.jpg",
     },
   ];
 

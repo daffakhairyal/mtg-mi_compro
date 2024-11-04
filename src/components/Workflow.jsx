@@ -2,6 +2,7 @@ import { CheckCircle2 } from "lucide-react";
 import codeImg from "../assets/code.jpg";
 import { background, checklistItems } from "../constants";
 import { useNavigate } from "react-router-dom";
+import video from "../statics/video.mp4"
 
 const Workflow = () => {
   const navigate = useNavigate(); 
@@ -18,9 +19,17 @@ const Workflow = () => {
         </span>
       </h2>
       <div className="flex flex-col lg:flex-row  justify-center ">
-        <div className="p-3 md:p-10 shadow-xl">
-          <img src="https://mtg.gold/img/about/about.png" alt="Coding" />
-        </div>
+      <div className="p-3 md:p-10 shadow-xl">
+  <video 
+    className="w-full h-auto" 
+    controls 
+    autoPlay  
+  >
+    <source src={video} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
         <div className="pt-10 w-full lg:w-1/2">
           {background.map((item,index)=>(
              <div key={index} className="flex mb-5">

@@ -1,25 +1,31 @@
 import React from 'react';
+import user1 from "../assets/profile-pictures/user1.jpg";
+import user2 from "../assets/profile-pictures/user2.jpg";
+import user3 from "../assets/profile-pictures/user3.jpg";
+import user4 from "../assets/profile-pictures/user4.jpg";
+import user5 from "../assets/profile-pictures/user5.jpg";
+import user6 from "../assets/profile-pictures/user6.jpg";
 
 const teamMembers = [
   {
     name: "Cecilia Risyana, SE, Dipl. DF",
     role: "Direktur Utama",
-    image: "https://via.placeholder.com/150", // ganti dengan URL gambar sebenarnya
+    image: user1, // ganti dengan URL gambar sebenarnya
   },
   {
     name: "Ir. Nuning Sri Rejeki Wulandari, MBA",
     role: "Direktur Keuangan dan Operasi",
-    image: "https://via.placeholder.com/150",
+    image: user2,
   },
   {
     name: "Dr. Puspita Wulandari, SE, MM,",
     role: "Komisaris Utama",
-    image: "https://via.placeholder.com/150",
+    image: user6,
   },
   {
     name: "Bambang Karuliawasto, Ak. MBA.",
     role: "Komisaris",
-    image: "https://via.placeholder.com/150",
+    image: user4,
   },
 ];
 
