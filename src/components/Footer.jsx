@@ -14,11 +14,7 @@ const Footer = () => {
         <div className="flex flex-col"> 
           <h3 className="text-md font-semibold mb-4">Our Location</h3>
           <p className="font-semibold text-sm text-justify italic">Main Office</p>
-          <p className="font-thin text-xs text-justify mb-4 italic">Taman Tekno BSD
-Blok F1/FG, Kelurahan Setu Kecamatan Setu, Kota Tangerang Selatan
-Provinsi Banten</p>
-<p className="font-semibold text-sm text-justify italic">Workshop</p>
-          <p className="font-thin text-xs text-justify italic">Jl. Semarang No. 2 Karang Mulia Nabire – Papua Tengah</p>
+          <p className="font-thin text-xs text-justify mb-4 italic">Menara Salemba Lantai 8 Suite 5B Jalan Salemba Raya Nomor 5 Paseban, Kecamatan Senen Jakarta Pusat (10440)n</p>
         </div>
         <div>
           <h3 className="text-md font-semibold mb-4">Products</h3>
