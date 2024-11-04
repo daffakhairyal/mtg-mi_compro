@@ -27,12 +27,19 @@ const Activity = () => {
         <div className="container mx-auto p-4 pt-10">
             {/* Bagian Video */}
             <h1 className="flex justify-center items-center font-medium text-4xl md:text-6xl font-semibold mb-4 text-yellow-600 pt-10">Events</h1>
-            <div className="mb-8">
-                <video className="w-full h-90 object-cover rounded-lg" controls>
-                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+            <div className="mb-8 h-80"> {/* Anda bisa menyesuaikan tinggi ini sesuai kebutuhan */}
+    <iframe 
+        className="w-full h-full" // Mengatur lebar dan tinggi menjadi penuh
+        src="https://www.youtube.com/embed/PAtDKI48C2I?si=pgabhZKwKR8aRE8i" 
+        title="YouTube video player" 
+        frameBorder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerPolicy="strict-origin-when-cross-origin" 
+        allowFullScreen
+    ></iframe>
+</div>
+
+
 
             {/* Bagian Carousel Gambar */}
             <h2 className="text-2xl font-bold mb-4">Gallery</h2>
@@ -41,7 +48,9 @@ const Activity = () => {
                     {images.map((src, index) => (
                         <div key={index} className="px-2">
                             <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                                <a href={src} target='_blank'>
                                 <img src={src} alt={`Slide ${index + 1}`} className="w-full h-64 object-cover" />
+                                </a>
                             </div>
                         </div>
                     ))}
