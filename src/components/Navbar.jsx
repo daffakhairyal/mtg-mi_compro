@@ -75,8 +75,8 @@ const Navbar = () => {
                 </a>
                 <div className="absolute pt-5">
                 <div className="hidden group-hover:flex group-hover:flex-col bg-neutral-800 p-5 rounded shadow-lg top-full left-0 w-[200px] space-y-5 duration-300 ">
-                <a href="/profile" className="text-white hover:underline duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800">Company</a>
-                  <a href="/management" className="text-white hover:underline duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800">Management</a>
+                <a href="/profile" onClick={(e) => handleNavigation(e, "/profile")} className="text-white hover:underline duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800">Company</a>
+                  <a href="/management" onClick={(e) => handleNavigation(e, "/management")} className="text-white hover:underline duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800">Management</a>
                   <a href="#" className="text-white hover:underline duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800">Legality</a>
                 </div>
                 </div>
@@ -97,6 +97,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="/contact"
+                  onClick={(e) => handleNavigation(e, "/contact")}
                   className="text-white duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-800"
                 >
                   Contact
@@ -121,7 +122,7 @@ const Navbar = () => {
                 </button>
                 {activeMobileMenu === "Profile" && (
                   <div className="mt-2 space-y-4">
-                    <a href="/profile" onClick={(e) => handleNavigation(e, "/profile")} className="block text-white">Company</a>
+                    <a href="/profile"  onClick={(e) => handleNavigation(e, "/profile")} className="block text-white">Company</a>
                     <a href="/management" onClick={(e) => handleNavigation(e, "/management")} className="block text-white">Management</a>
                     <a href="#" className="block text-white">Legality</a>
                   </div>
